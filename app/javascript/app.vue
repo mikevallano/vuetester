@@ -1,22 +1,30 @@
-<!-- <template>
-  <div id="app">
-    <p>{{ message }}</p>
+<template>
+  <div id="hello">
+    <patient></patient>
   </div>
 </template>
 
 <script>
+
+import Patient from './patient.vue'
+
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
-    }
+  // data: function () {
+  //   return {
+  //     message: "Hello Vue!"
+  //   }
+  // }
+  name: 'app',
+  components: {
+    Patient
   }
 }
 </script>
 
-<style scoped>
+<!-- <style scoped>
 p {
-  font-size: 2em;
+  font-size: 4em !important;
   text-align: center;
+  color: red;
 }
 </style> -->
